@@ -1,9 +1,11 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
+console.log("\n\tWelcome to 'Areesha Iqbal' -CLI Simple Calculator\n");
 const answer = await inquirer.prompt([
     { message: "Enter first number", type: "number", name: "firstNumber" },
     { message: "Enter second number", type: "number", name: "secondNumber" },
     {
-        message: "Select one of the operators to perform action",
+        message: "Select one of the operator to perform action",
         type: "list",
         name: "operator",
         choices: ["Addition", "Subtraction", "Multiplication", "Division"],

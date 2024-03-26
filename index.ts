@@ -1,4 +1,8 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer";
+
+console.log("\n\tWelcome to 'Areesha Iqbal' -CLI Simple Calculator\n");
 
 const answer = await inquirer.prompt([
   { message: "Enter first number", type: "number", name: "firstNumber" },
@@ -16,16 +20,12 @@ console.log(answer);
 //Conditional Statement
 if (answer.operator === "Addition") {
   console.log(answer.firstNumber + answer.secondNumber);
-}
-else if (answer.operator === "Subtraction") {
+} else if (answer.operator === "Subtraction") {
   console.log(answer.firstNumber - answer.secondNumber);
-}
-else if (answer.operator === "Multiplication") {
+} else if (answer.operator === "Multiplication") {
   console.log(answer.firstNumber * answer.secondNumber);
-}
-else if (answer.operator === "Division") {
+} else if (answer.operator === "Division") {
   console.log(answer.firstNumber / answer.secondNumber);
-}else{
+} else {
   console.log("Please select Valid operator");
 }
-
